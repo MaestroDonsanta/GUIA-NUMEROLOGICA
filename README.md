@@ -3,7 +3,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guía Detallada de Números de Numerología</title>
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -48,20 +50,52 @@
             color: #2563eb; /* Blue dot */
             font-weight: bold;
         }
+        .insight-box {
+            background-color: #e0f2fe; /* Light blue for insight box */
+            border-left: 4px solid #2563eb; /* Blue border */
+            padding: 1rem;
+            border-radius: 0.5rem;
+            margin-top: 1rem;
+            font-style: italic;
+            color: #1a202c;
+            min-height: 50px; /* Ensure visibility even when empty */
+            display: flex;
+            align-items: center; /* Center content vertically */
+            justify-content: center; /* Center content horizontally */
+            text-align: center;
+        }
+        .loading-spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #3498db;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            animation: spin 1s linear infinite;
+            margin: auto;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
     </style>
 </head>
 <body class="antialiased">
     <div class="container mx-auto p-4 sm:p-6 lg:p-8">
-        <header class="text-center py-8 mb-8 bg-white shadow-lg rounded-xl">
-            <h1 class="text-5xl font-extrabold text-indigo-800 mb-4">Guía Detallada de Numerología</h1>
-            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+        <!-- Header Section -->
+        <header class="text-center py-8 mb-8 rounded-xl shadow-lg
+                       bg-gradient-to-r from-indigo-600 to-purple-700 text-white">
+            <h1 class="text-5xl font-extrabold mb-4">Guía Detallada de Numerología</h1>
+            <p class="text-xl text-indigo-100 max-w-3xl mx-auto">
                 Descubre el significado profundo de cada número en tu camino de vida. Esta guía te ofrece una visión ampliada para tu inspiración y autoconocimiento.
             </p>
         </header>
 
+        <!-- Main Content Area -->
         <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-            <section class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+            <!-- NÚMERO 1: EL PIONERO -->
+            <section class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                 <h2 class="card-title">1️⃣ NÚMERO 1: EL PIONERO</h2>
                 <p class="content-item"><strong>Significado Numerológico:</strong> El número 1 es el arquetipo de la creación, el punto de partida. Simboliza el inicio absoluto, la unidad indivisible y la esencia de la individualidad. Representa la fuerza de voluntad, la independencia y la capacidad de forjar un camino propio donde antes no existía nada.</p>
                 <p class="content-item"><strong>Camino de Vida:</strong> Si el 1 es tu número de vida, tu propósito es ser un verdadero pionero. Estás destinado a ser el primero en tu campo, a innovar y a liderar. Tu existencia se trata de romper con lo establecido, desafiar las normas y forjar nuevos senderos que otros seguirán. Eres un catalizador para el cambio y la evolución.</p>
@@ -83,9 +117,15 @@
                     <li>Practica la escucha activa para absorber nuevas ideas y perspectivas, lo que enriquecerá tus propios proyectos.</li>
                     <li>Aprende a delegar tareas y a confiar en las capacidades de tu equipo, liberándote para enfocarte en la visión general.</li>
                 </ul>
+                <!-- Gemini AI Integration -->
+                <button onclick="generateInsight('1', 'Pionero')" class="mt-4 w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full transition-colors duration-200 shadow-md flex items-center justify-center">
+                    Generar Insight ✨
+                </button>
+                <div id="insight-1" class="insight-box hidden"></div>
             </section>
 
-            <section class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+            <!-- NÚMERO 2: EL DIPLOMÁTICO -->
+            <section class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                 <h2 class="card-title">2️⃣ NÚMERO 2: EL DIPLOMÁTICO</h2>
                 <p class="content-item"><strong>Significado Numerológico:</strong> El número 2 simboliza la dualidad, la unión y la interconexión. Representa la cooperación, la sensibilidad, la armonía y el equilibrio. Es el número de la pareja, la asociación y la capacidad de ver ambos lados de una situación.</p>
                 <p class="content-item"><strong>Camino de Vida:</strong> Si el 2 es tu número de vida, tu propósito es ser un mediador innato. Estás aquí para unir a las personas, fomentar la colaboración y crear paz en tu entorno. Eres un constructor de puentes.</p>
@@ -97,7 +137,8 @@
                 <p class="content-item"><strong>Destino:</strong> Estás destinado a ser un puente vital entre personas, ideas o culturas. Tu rol es facilitar la comprensión y el entendimiento mutuo, ayudando a construir relaciones sólidas y duraderas. Serás reconocido por tu capacidad para unir y armonizar.</p>
                 <p class="content-item"><strong>Personalidad:</strong> Eres una persona amable, gentil y discreta, que prefiere trabajar en segundo plano. Eres muy observadora, captando detalles que otros pasan por alto, y extremadamente sensible a las necesidades de los demás. Valoras profundamente la paz, la tranquilidad y la estabilidad emocional.</p>
                 <p class="content-item"><strong>Color Asociado:</strong> El **Naranja** y el **Azul** son colores asociados con el número 2. El **Naranja** conecta con la creatividad y la sociabilidad, mientras que el **Azul** resuena con la diplomacia, la tranquilidad, el equilibrio y la armonía. Ambos reflejan la naturaleza cooperativa y sensible del 2.</p>
-                <p class="content-item"><strong>Mensaje Clave:</strong> "Tu mayor poder no reside en la fuerza bruta, sino en tu capacidad para escuchar con el corazón, comprender profundamente y unir a las personas en armonía."</p>
+                <p class="content-item"><strong>Mensaje Clave:
+                </strong> "Tu mayor poder no reside en la fuerza bruta, sino en tu capacidad para escuchar con el corazón, comprender profundamente y unir a las personas en armonía."</p>
                 <p class="content-item"><strong>Conclusión:</strong> Tu sensibilidad es un don precioso que te permite conectar profundamente con los demás y crear ambientes de paz. Sin embargo, para mantener tu bienestar y tu capacidad de servicio, es crucial que cultives tu voz interior y aprendas a expresar tus propias necesidades y deseos de manera asertiva, sin sentir culpa.</p>
                 <p class="card-subtitle mt-4">Recomendaciones:</p>
                 <ul class="recommendation-list">
@@ -107,9 +148,15 @@
                     <li>Trabaja en tu autoestima para no depender de la aprobación de los demás y confiar más en tus propias decisiones.</li>
                     <li>Busca roles donde tu capacidad de colaboración y mediación sea valorada, pero donde también puedas desarrollar tu individualidad.</li>
                 </ul>
+                <!-- Gemini AI Integration -->
+                <button onclick="generateInsight('2', 'Diplomático')" class="mt-4 w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full transition-colors duration-200 shadow-md flex items-center justify-center">
+                    Generar Insight ✨
+                </button>
+                <div id="insight-2" class="insight-box hidden"></div>
             </section>
 
-            <section class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+            <!-- NÚMERO 3: EL CREADOR -->
+            <section class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                 <h2 class="card-title">3️⃣ NÚMERO 3: EL CREADOR</h2>
                 <p class="content-item"><strong>Significado Numerológico:</strong> El número 3 es el arquetipo de la expresión y la creatividad. Simboliza la alegría, la comunicación, el optimismo y la manifestación. Es el número de la trinidad (mente, cuerpo, espíritu) y representa la expansión y la inspiración.</p>
                 <p class="content-item"><strong>Camino de Vida:</strong> Si el 3 es tu número de vida, tu propósito es comunicar, inspirar y sanar a través de la expresión. Ya sea a través del arte, la palabra hablada o escrita, o cualquier forma de creatividad, estás aquí para traer luz y alegría al mundo.</p>
@@ -131,9 +178,15 @@
                     <li>Practica la concentración y la perseverancia para evitar la dispersión de tu energía en demasiadas direcciones.</li>
                     <li>Aprende a valorar la profundidad y el compromiso, tanto en tus relaciones como en tus creaciones.</li>
                 </ul>
+                <!-- Gemini AI Integration -->
+                <button onclick="generateInsight('3', 'Creador')" class="mt-4 w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full transition-colors duration-200 shadow-md flex items-center justify-center">
+                    Generar Insight ✨
+                </button>
+                <div id="insight-3" class="insight-box hidden"></div>
             </section>
 
-            <section class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+            <!-- NÚMERO 4: EL CONSTRUCTOR -->
+            <section class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                 <h2 class="card-title">4️⃣ NÚMERO 4: EL CONSTRUCTOR</h2>
                 <p class="content-item"><strong>Significado Numerológico:</strong> El número 4 representa la estabilidad, la disciplina, el orden, el trabajo duro y la construcción de cimientos sólidos. Es el número de la estructura, la base, la seguridad y la fiabilidad. Simboliza los cuatro puntos cardinales y los cuatro elementos, anclando la energía en la realidad.</p>
                 <p class="content-item"><strong>Camino de Vida:</strong> Si el 4 es tu número de vida, tu propósito es crear estructuras sólidas y duraderas en todos los ámbitos de tu existencia. Ya sea en el ámbito material (negocios, hogar), profesional (carrera, sistemas) o personal (valores, hábitos), estás aquí para construir bases fiables y seguras.</p>
@@ -155,12 +208,18 @@
                     <li>Practica la gratitud por lo que ya has construido y por la estabilidad que posees.</li>
                     <li>Aprende a ser menos crítico contigo mismo y con los demás, fomentando una mentalidad más compasiva.</li>
                 </ul>
+                <!-- Gemini AI Integration -->
+                <button onclick="generateInsight('4', 'Constructor')" class="mt-4 w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full transition-colors duration-200 shadow-md flex items-center justify-center">
+                    Generar Insight ✨
+                </button>
+                <div id="insight-4" class="insight-box hidden"></div>
             </section>
 
-            <section class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+            <!-- NÚMERO 5: EL EXPLORADOR -->
+            <section class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                 <h2 class="card-title">5️⃣ NÚMERO 5: EL EXPLORADOR</h2>
                 <p class="content-item"><strong>Significado Numerológico:</strong> El número 5 representa la libertad, el cambio, la aventura, la adaptabilidad y la versatilidad. Es el número de la experiencia, la curiosidad insaciable y la búsqueda constante de nuevas sensaciones. Simboliza los cinco sentidos y la conexión con el mundo.</p>
-                <p class="content-item"><strong>Camino de Vida:</strong> Si el 5 es tu número de vida, tu misión es aprender y crecer a través del cambio, la exploración y la diversidad de experiencias. Estás aquí para vivir la vida al máximo, abrazando cada novedad y cada desafío como una oportunidad para expandirte.</p>
+                <p class="content-item"><strong>Camino de Vida:</strong> Si el 5 es tu número de vida, tu propósito es aprender y crecer a través del cambio, la exploración y la diversidad de experiencias. Estás aquí para vivir la vida al máximo, abrazando cada novedad y cada desafío como una oportunidad para expandirte.</p>
                 <p class="content-item"><strong>Atributos Positivos:</strong> Posees una versatilidad asombrosa que te permite adaptarte a cualquier situación o rol. Tu curiosidad es insaciable, siempre buscando conocer y experimentar algo nuevo. Tienes una gran resiliencia para superar los desafíos y una capacidad innata para encontrar la diversión en cualquier circunstancia.</p>
                 <p class="content-item"><strong>Energía:</strong> Tu energía es dinámica, inquieta y magnética. Eres un torbellino de actividad y siempre estás en movimiento, tanto física como mentalmente. Te aburres fácilmente de la rutina y buscas constantemente nuevas sensaciones, lo que te convierte en una persona emocionante y atractiva.</p>
                 <p class="content-item"><strong>Potencial:</strong> Tienes el potencial de ser un viajero incansable, explorando culturas y lugares remotos. Podrías ser un comunicador excepcional, un periodista que busca la verdad, un agente de cambio que desafía el status quo, o simplemente alguien que experimenta la vida en todas sus facetas.</p>
@@ -179,9 +238,15 @@
                     <li>Desarrolla la disciplina para finalizar lo que empiezas, lo que te dará una mayor sensación de logro.</li>
                     <li>Busca un equilibrio entre la aventura y la estabilidad para construir una base sólida en tu vida.</li>
                 </ul>
+                <!-- Gemini AI Integration -->
+                <button onclick="generateInsight('5', 'Explorador')" class="mt-4 w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full transition-colors duration-200 shadow-md flex items-center justify-center">
+                    Generar Insight ✨
+                </button>
+                <div id="insight-5" class="insight-box hidden"></div>
             </section>
 
-            <section class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+            <!-- NÚMERO 6: EL CURADOR -->
+            <section class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                 <h2 class="card-title">6️⃣ NÚMERO 6: EL CURADOR</h2>
                 <p class="content-item"><strong>Significado Numerológico:</strong> El número 6 representa el amor incondicional, la responsabilidad, el servicio, la armonía familiar y la belleza. Es el número del hogar, la comunidad, la compasión y el cuidado. Simboliza el equilibrio y la necesidad de nutrir.</p>
                 <p class="content-item"><strong>Camino de Vida:</strong> Si el 6 es tu número de vida, tu misión es sanar relaciones, nutrir a los demás y crear un ambiente de belleza, equilibrio y armonía a tu alrededor. Eres un cuidador natural, destinado a brindar apoyo y consuelo.</p>
@@ -203,9 +268,15 @@
                     <li>Establece límites claros en tus relaciones para proteger tu tiempo y energía, sin sentirte culpable por ello.</li>
                     <li>Recuerda que no puedes ayudar a nadie si tú mismo estás agotado; tu bienestar es primordial.</li>
                 </ul>
+                <!-- Gemini AI Integration -->
+                <button onclick="generateInsight('6', 'Curador')" class="mt-4 w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full transition-colors duration-200 shadow-md flex items-center justify-center">
+                    Generar Insight ✨
+                </button>
+                <div id="insight-6" class="insight-box hidden"></div>
             </section>
 
-            <section class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+            <!-- NÚMERO 7: EL SABIO -->
+            <section class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                 <h2 class="card-title">7️⃣ NÚMERO 7: EL SABIO</h2>
                 <p class="content-item"><strong>Significado Numerológico:</strong> El número 7 representa la sabiduría, la introspección, el análisis profundo, la espiritualidad y la búsqueda de la verdad. Es el número del conocimiento oculto, la intuición y la conexión con lo divino. Simboliza la perfección y la completitud.</p>
                 <p class="content-item"><strong>Camino de Vida:</strong> Si el 7 es tu número de vida, tu misión es buscar y enseñar verdades profundas. Estás aquí para desentrañar los misterios de la vida, tanto a nivel intelectual como espiritual, y compartir tus descubrimientos con el mundo.</p>
@@ -227,9 +298,15 @@
                     <li>Cultiva la fe y la confianza en lo desconocido, permitiéndote explorar más allá de lo puramente lógico.</li>
                     <li>Aprende a expresar tus emociones y a conectar a un nivel más profundo con los demás, incluso si te resulta difícil al principio.</li>
                 </ul>
+                <!-- Gemini AI Integration -->
+                <button onclick="generateInsight('7', 'Sabio')" class="mt-4 w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full transition-colors duration-200 shadow-md flex items-center justify-center">
+                    Generar Insight ✨
+                </button>
+                <div id="insight-7" class="insight-box hidden"></div>
             </section>
 
-            <section class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+            <!-- NÚMERO 8: EL LÍDER -->
+            <section class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                 <h2 class="card-title">8️⃣ NÚMERO 8: EL LÍDER</h2>
                 <p class="content-item"><strong>Significado Numerológico:</strong> El número 8 representa la abundancia, el poder, la autoridad, la manifestación y el éxito material. Es el número del karma, la justicia, el equilibrio y la capacidad de construir imperios. Simboliza el infinito y el flujo de energía.</p>
                 <p class="content-item"><strong>Camino de Vida:</strong> Si el 8 es tu número de vida, tu misión es gestionar recursos (financieros, humanos, energéticos) con ética, integridad y una visión de prosperidad que beneficie a muchos. Estás aquí para ser un líder poderoso y justo.</p>
@@ -251,9 +328,15 @@
                     <li>Aprende a delegar y a confiar en tu equipo, liberándote del control excesivo.</li>
                     <li>Encuentra un equilibrio entre el éxito material y el bienestar espiritual para una vida plena.</li>
                 </ul>
+                <!-- Gemini AI Integration -->
+                <button onclick="generateInsight('8', 'Líder')" class="mt-4 w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full transition-colors duration-200 shadow-md flex items-center justify-center">
+                    Generar Insight ✨
+                </button>
+                <div id="insight-8" class="insight-box hidden"></div>
             </section>
 
-            <section class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+            <!-- NÚMERO 9: EL HUMANISTA -->
+            <section class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                 <h2 class="card-title">9️⃣ NÚMERO 9: EL HUMANISTA</h2>
                 <p class="content-item"><strong>Significado Numerológico:</strong> El número 9 representa la compasión universal, el altruismo, la finalización de ciclos y la sabiduría global. Es el número del servicio a la humanidad, la iluminación y la culminación. Simboliza la conclusión de un ciclo y la preparación para uno nuevo.</p>
                 <p class="content-item"><strong>Camino de Vida:</strong> Si el 9 es tu número de vida, tu misión es servir a la humanidad en un sentido amplio. Estás aquí para inspirar cambios sociales, fomentar la compasión y dejar un legado de amor y justicia que trascienda lo personal.</p>
@@ -275,8 +358,14 @@
                     <li>Dedica tiempo a actividades que te recarguen y te nutran, como el arte, la meditación o el contacto con la naturaleza.</li>
                     <li>Aprende a perdonar, tanto a los demás como a ti mismo, para liberar resentimientos y avanzar.</li>
                 </ul>
+                <!-- Gemini AI Integration -->
+                <button onclick="generateInsight('9', 'Humanista')" class="mt-4 w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full transition-colors duration-200 shadow-md flex items-center justify-center">
+                    Generar Insight ✨
+                </button>
+                <div id="insight-9" class="insight-box hidden"></div>
             </section>
 
+            <!-- NÚMEROS MAESTROS -->
             <section class="col-span-1 md:col-span-2 lg:col-span-3 text-center py-8">
                 <h2 class="section-title">🔮 NÚMEROS MAESTROS</h2>
                 <p class="text-lg text-gray-700 max-w-2xl mx-auto">
@@ -284,7 +373,8 @@
                 </p>
             </section>
 
-            <section class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+            <!-- NÚMERO 11: EL VISIONARIO -->
+            <section class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                 <h2 class="card-title">1️⃣1️⃣ NÚMERO 11: EL VISIONARIO</h2>
                 <p class="content-item"><strong>Significado Numerológico:</strong> El número 11 es el primero de los Números Maestros y representa la intuición elevada, la iluminación espiritual y la inspiración divina. Es el número del mensajero, el canal y el visionario, con una conexión directa con planos superiores de conciencia.</p>
                 <p class="content-item"><strong>Camino de Vida:</strong> Si el 11 es tu número de vida, tu misión es ser un puente entre las dimensiones espiritual y material. Estás aquí para canalizar ideas, verdades superiores e inspiración, y traerlas al mundo terrenal para elevar la conciencia colectiva.</p>
@@ -306,9 +396,15 @@
                     <li>Aprende a establecer límites para proteger tu energía de las influencias externas y evitar la sobrecarga sensorial.</li>
                     <li>Confía en tu intuición, pero también desarrolla la capacidad de discernir y aplicar tus visiones de manera práctica.</li>
                 </ul>
+                <!-- Gemini AI Integration -->
+                <button onclick="generateInsight('11', 'Visionario')" class="mt-4 w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full transition-colors duration-200 shadow-md flex items-center justify-center">
+                    Generar Insight ✨
+                </button>
+                <div id="insight-11" class="insight-box hidden"></div>
             </section>
 
-            <section class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+            <!-- NÚMERO 22: EL ARQUITECTO -->
+            <section class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                 <h2 class="card-title">2️⃣2️⃣ NÚMERO 22: EL ARQUITECTO</h2>
                 <p class="content-item"><strong>Significado Numerológico:</strong> El número 22 es el "Maestro Constructor", el más poderoso de los Números Maestros. Representa la capacidad de materializar sueños a gran escala, el pragmatismo espiritual y una visión global. Combina la intuición del 11 con la practicidad del 4, creando un potencial ilimitado para la manifestación.</p>
                 <p class="content-item"><strong>Camino de Vida:</strong> Si el 22 es tu número de vida, tu misión es hacer posible lo que parece imposible. Estás aquí para construir proyectos de impacto universal que beneficien a la humanidad, transformando visiones grandiosas en realidades tangibles.</p>
@@ -330,9 +426,15 @@
                     <li>Aprende a celebrar los pequeños logros en el camino para mantenerte motivado y evitar el perfeccionismo paralizante.</li>
                     <li>Conecta con tu propósito superior para mantener la perspectiva y recordar por qué estás construyendo lo que construyes.</li>
                 </ul>
+                <!-- Gemini AI Integration -->
+                <button onclick="generateInsight('22', 'Arquitecto')" class="mt-4 w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full transition-colors duration-200 shadow-md flex items-center justify-center">
+                    Generar Insight ✨
+                </button>
+                <div id="insight-22" class="insight-box hidden"></div>
             </section>
 
-            <section class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+            <!-- NÚMERO 33: EL MAESTRO -->
+            <section class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                 <h2 class="card-title">3️⃣3️⃣ NÚMERO 33: EL MAESTRO</h2>
                 <p class="content-item"><strong>Significado Numerológico:</strong> El número 33 es el "Maestro Sanador" o "Maestro de la Compasión", el más elevado de los Números Maestros. Representa el amor incondicional, el servicio desinteresado a la humanidad y la sanación colectiva. Combina la expresión creativa del 3 con la responsabilidad del 6, multiplicando su impacto a un nivel universal.</p>
                 <p class="content-item"><strong>Camino de Vida:</strong> Si el 33 es tu número de vida, tu misión es enseñar con el ejemplo, irradiando amor incondicional y elevando la conciencia de la humanidad. Estás aquí para ser un faro de compasión y un catalizador de la sanación a gran escala.</p>
@@ -354,16 +456,61 @@
                     <li>Practica el desapego de los resultados, enfocándote en el proceso de dar amor y servicio sin expectativas.</li>
                     <li>Dedica tiempo a la soledad y la reflexión para recargar tu energía y procesar las emociones que absorbes del entorno.</li>
                 </ul>
+                <!-- Gemini AI Integration -->
+                <button onclick="generateInsight('33', 'Maestro')" class="mt-4 w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full transition-colors duration-200 shadow-md flex items-center justify-center">
+                    Generar Insight ✨
+                </button>
+                <div id="insight-33" class="insight-box hidden"></div>
             </section>
 
         </main>
 
-        <footer class="text-center py-8 mt-8 bg-white shadow-lg rounded-xl">
-            <p class="text-gray-600">
+        <!-- Footer Section -->
+        <footer class="text-center py-8 mt-8 rounded-xl shadow-lg
+                       bg-gradient-to-r from-purple-700 to-indigo-600 text-white">
+            <p class="text-indigo-100">
                 Esperamos que esta guía te sirva de inspiración en tu camino de autoconocimiento.
                 ¡Explora la magia de los números!
             </p>
         </footer>
     </div>
+
+    <script>
+        // Función para generar un insight usando la API de Gemini
+        async function generateInsight(number, archetype) {
+            const insightBox = document.getElementById(`insight-${number}`);
+            insightBox.classList.remove('hidden'); // Show the insight box
+            insightBox.innerHTML = '<div class="loading-spinner"></div><p class="text-gray-600 mt-2">Generando...</p>'; // Show loading indicator
+
+            const prompt = `Genera una afirmación personalizada o un breve consejo inspirador para alguien con el número ${number} en numerología, centrándote en su aspecto de ${archetype}. Hazlo conciso y positivo, como un mensaje de guía.`;
+
+            let chatHistory = [];
+            chatHistory.push({ role: "user", parts: [{ text: prompt }] });
+            const payload = { contents: chatHistory };
+            const apiKey = ""; // If you want to use models other than gemini-2.0-flash or imagen-3.0-generate-002, provide an API key here. Otherwise, leave this as-is.
+            const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
+
+            try {
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+                const result = await response.json();
+
+                if (result.candidates && result.candidates.length > 0 &&
+                    result.candidates[0].content && result.candidates[0].content.parts &&
+                    result.candidates[0].content.parts.length > 0) {
+                    const text = result.candidates[0].content.parts[0].text;
+                    insightBox.textContent = text; // Display the generated text
+                } else {
+                    insightBox.textContent = "No se pudo generar el insight. Intenta de nuevo."; // Handle unexpected response
+                }
+            } catch (error) {
+                console.error("Error al llamar a la API de Gemini:", error);
+                insightBox.textContent = "Error al conectar con el servicio. Por favor, inténtalo más tarde."; // Handle network or API errors
+            }
+        }
+    </script>
 </body>
 </html>
